@@ -1,9 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
+import ProductList from '../components/ProductList';
 import Header from '../components/Header'
-import './index.css'
+// import './index.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -15,6 +17,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
+    <ProductList name="product " data={[1,2,3,4,5,6,7,8,9]}/>
     <div
       style={{
         margin: '0 auto',
